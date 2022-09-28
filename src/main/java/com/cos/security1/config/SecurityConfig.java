@@ -42,7 +42,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .loginPage("/loginPage")// 구글 로그인이 완료된 이후 후처리가 필요 1. 코드받기(인증) 2. 엑세스토큰(권한) 3.사용자프로필 정보를 가져오고 그 정보를 토대로 회원가입을 자동으로 진행시키기도 함
                 .userInfoEndpoint()
                 .userService(principalOauthUserService)
-
         ;
     }
 }
