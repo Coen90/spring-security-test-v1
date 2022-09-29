@@ -2,6 +2,7 @@ package com.cos.security1.model;
 
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.Entity;
@@ -12,6 +13,7 @@ import java.sql.Timestamp;
 
 @Entity
 @Data
+@NoArgsConstructor
 public class User {
 
     @Id
@@ -37,4 +39,5 @@ public class User {
         this.providerId = providerId;
         this.createDate = createDate;
     }
+
 }
